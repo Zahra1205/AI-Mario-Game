@@ -292,7 +292,7 @@ function manualControl(character){
       character.mirrorX(-1);
     }
 
-    if(noseX < 300){
+    if(noseX > 300){
       character.velocity.x+=gameConfig.moveSpeed;
       character.changeAnimation('move');
       character.mirrorX(1);
